@@ -1,0 +1,98 @@
+.hero {
+  position: relative;
+  text-align: center;
+  padding: 80px 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  background: url('/Images/food1.jpg') no-repeat center center/cover;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Optional: dark overlay so text is readable */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4); /* dark overlay */
+  z-index: 1;
+}
+
+.hero h2, .hero p, .hero-btn {
+  position: relative;
+  z-index: 2; /* so they appear above overlay */
+}
+
+.hero h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.hero-btn {
+  padding: 14px 28px;
+  background: #ff4c29;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+
+.hero-btn:hover {
+  background: #e03e1b;
+}
+a {
+  text-decoration: none;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+  .hero {
+    padding: 60px 15px;
+  }
+
+  .hero h2 {
+    font-size: 24px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .hero-btn {
+    padding: 12px 22px;
+  }
+}
+
+/* TABLET AND DESKTOP */
+@media (min-width: 769px) {
+  .hero {
+    min-height: 500px;
+  }
+
+  .hero h2 {
+    font-size: 36px;
+  }
+
+  .hero p {
+    font-size: 20px;
+  }
+}

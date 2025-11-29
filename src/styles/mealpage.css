@@ -1,0 +1,60 @@
+.meal-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  display: flex;
+  gap: 25px;
+  align-items: flex-start;
+}
+
+.meal-img {
+  width: 45%;
+  height: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.meal-info {
+  width: 55%;
+}
+
+.meal-info h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 22px;
+  color: #ff4c29;
+  font-weight: bold;
+}
+
+.desc {
+  margin: 15px 0;
+  color: #555;
+}
+
+.order-btn {
+  padding: 12px 20px;
+  background: #ff4c29;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .meal-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .meal-img {
+    width: 100%;
+    height: 250px;
+  }
+
+  .meal-info {
+    width: 100%;
+  }
+}

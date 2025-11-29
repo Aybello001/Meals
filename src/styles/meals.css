@@ -1,0 +1,85 @@
+.meal-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+/* Hover effect */
+.meal-card:hover {
+  transform: translateY(-5px);
+}
+
+.meal-card img {
+  width: 100%;
+  height: 180px; /* a bit taller for nice visual */
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+.meal-card h3 {
+  font-size: 18px;
+  margin: 10px 0 5px 0;
+  color: #222;
+}
+
+.meal-card p {
+  font-size: 16px;
+  color: #ff4c29; /* price color matching your theme */
+  margin: 0 0 10px 0;
+  font-weight: bold;
+}
+
+.meal-card button {
+  padding: 10px 20px;
+  background: #ff4c29;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin: 10px;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.meal-card button:hover {
+  background: #e03e1b;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+  .meal-card {
+    width: 90%; /* full width on mobile */
+    margin-bottom: 15px;
+    margin: 0 auto;
+  }
+
+  .meal-card img {
+    height: 160px;
+  }
+}
+
+/* GRID LAYOUT FOR MULTIPLE CARDS */
+.meals-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* mobile first */
+  gap: 20px;
+  padding: 20px 0;
+}
+
+@media (min-width: 600px) {
+  .meals-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .meals-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
