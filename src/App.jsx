@@ -5,7 +5,7 @@ import NigerMeals from "./Pages/nigerMeals";
 
 function App() {
   return (
-    <BrowserRouter basename="/niger-meal">
+    <BrowserRouter basename="/Meals">
       <Routes>
         <Route path="/"  element={<NigerMeals />} />
         <Route path="/menu" element={<Menu />} />
