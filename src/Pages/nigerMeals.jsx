@@ -6,12 +6,12 @@ import { Link } from "react-router-dom";
 
 export default function NigerMeals() {
   const meals = [
-    { name: "Jollof Rice", price: 2500, img: "/Images/food1.jpg" },
-    { name: "Bonce", price: 3000, img: "/Images/food2.jpg" },
-    { name: "Jollof Rice", price: 2500, img: "/Images/food1.jpg" },
-    { name: "Bonce", price: 3000, img: "/Images/food2.jpg" },
-    { name: "Jollof Rice", price: 2500, img: "/Images/food1.jpg" },
-    { name: "Bonce", price: 3000, img: "/Images/food2.jpg" },
+    { name: "Jollof Rice", price: 2500, img: "./Images/food1.jpg" },
+    { name: "Bonce", price: 3000, img: "./Images/food2.jpg" },
+    { name: "Jollof Rice", price: 2500, img: "./Images/food1.jpg" },
+    { name: "Bonce", price: 3000, img: "./Images/food2.jpg" },
+    { name: "Jollof Rice", price: 2500, img: "./Images/food1.jpg" },
+    { name: "Bonce", price: 3000, img: "./Images/food2.jpg" },
   ];
 
 

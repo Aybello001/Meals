@@ -67,7 +67,7 @@
 /* GRID LAYOUT FOR MULTIPLE CARDS */
 .meals-grid {
   display: grid;
-  grid-template-columns: 1fr; /* mobile first */
+  grid-template-columns: 1fr; 
   gap: 20px;
   padding: 20px 0;
 }
