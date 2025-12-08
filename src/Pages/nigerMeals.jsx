@@ -8,11 +8,11 @@ export default function NigerMeals() {
   const Base = import.meta.env.VITE_BASE_URL;
   const meals = [
     { name: "Jollof Rice", price: 2500, img: "/Meals/Images/food1.jpg" },
-    { name: "Bonce", price: 3000, img: "/Meals/Images/food2.jpg" },
+    { name: "Buns", price: 3000, img: "/Meals/Images/food2.jpg" },
     { name: "Jollof Rice", price: 2500, img: "/Meals/Images/food1.jpg" },
-    { name: "Bonce", price: 3000, img: "/Meals/Images/food2.jpg" },
+    { name: "Buns", price: 3000, img: "/Meals/Images/food2.jpg" },
     { name: "Jollof Rice", price: 2500, img: "/Meals/Images/food1.jpg" },
-    { name: "Bonce", price: 3000, img: "/Meals/Images/food2.jpg" },
+    { name: "Buns", price: 3000, img: "/Meals/Images/food2.jpg" },
   ];
 
 
