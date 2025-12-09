@@ -47,7 +47,7 @@ function MealPage() {
           </p>
           
 
-          <button className="order-btn">Order Now</button>
+          <button className="order-btn">Add to Cart</button>
 
           <p className="desc"><h3>Instructions</h3>{meal.strInstructions}</p>
         </div>

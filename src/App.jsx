@@ -1,18 +1,17 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Menu from "./Pages/Menu";
-import MealPage from "./Pages/MealsPage";
-import NigerMeals from "./Pages/nigerMeals";
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Menu from "./pages/Menu";
+import NigerMeals from "./pages/NigerMeals";
+import Meal from "./pages/MealsPage"; // rename so it matches
+import CartPage from "./pages/CartPage";
 
-function App() {
+export default function App() {
   return (
-    <BrowserRouter basename="/Meals">
-      <Routes>
-        <Route path="/"  element={<NigerMeals />} />
-        <Route path="/menu" element={<Menu />} />
-        <Route path="/meal/:id" element={<MealPage />} />
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route index element={<NigerMeals />} />
+      <Route path="/menu" element={<Menu />} />
+      <Route path="/meal/:id" element={<Meal />} />
+      <Route path="/cart" element={<CartPage />} />
+    </Routes>
   );
 }
-
-export default App;
