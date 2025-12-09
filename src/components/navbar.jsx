@@ -29,7 +29,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`bg-white px-6 py-4 flex justify-between items-center fixed w-full z-10 transition-all duration-300 ${
+      className={`bg-white px-6 py-4 flex justify-between items-center fixed w-full z-50 transition-all duration-300 ${
         scrolled ? "shadow-lg py-3" : "shadow-md"
       }`}
     >
@@ -40,13 +40,18 @@ export default function Navbar() {
         </h1>
       </Link>
 
-      {/* Hamburger (Mobile) */}
+      {/* Hamburger (Mobile) with Cart Badge */}
       <button
-        className="md:hidden text-2xl text-gray-700 hover:text-orange-600 transition-colors"
+        className="md:hidden text-2xl text-gray-700 hover:text-orange-600 transition-colors relative"
         onClick={toggleMenu}
         aria-label="Toggle menu"
       >
         {isOpen ? <FaTimes /> : <FaBars />}
+        {cart.length > 0 && !isOpen && (
+          <span className="absolute -top-1 -right-1 bg-orange-500 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center animate-pulse">
+            {cart.length}
+          </span>
+        )}
       </button>
 
       {/* Nav Items */}
@@ -120,7 +125,7 @@ export default function Navbar() {
       {/* Mobile Overlay */}
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black/20 md:hidden z-40"
+          className="fixed inset-0 bg-black/20 md:hidden -z-10"
           onClick={toggleMenu}
         />
       )}

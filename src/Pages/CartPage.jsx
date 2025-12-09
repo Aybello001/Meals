@@ -142,7 +142,7 @@ export default function CartPage() {
                                 <FaMinus size={12} />
                               </button>
 
-                              <span className="font-bold text-lg min-w-[2rem] text-center">
+                              <span className="font-bold text-lg min-w-[1rem] mx-[-0.5rem] text-center">
                                 {qty}
                               </span>
 
