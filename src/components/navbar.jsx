@@ -29,7 +29,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`bg-white px-6 py-4 flex justify-between items-center fixed w-full z-50 transition-all duration-300 ${
+      className={`bg-white px-6 py-4 flex justify-between items-center fixed w-full z-10 transition-all duration-300 ${
         scrolled ? "shadow-lg py-3" : "shadow-md"
       }`}
     >
@@ -51,7 +51,7 @@ export default function Navbar() {
 
       {/* Nav Items */}
       <ul
-        className={`md:flex gap-2 font-medium absolute md:static bg-white w-full md:w-auto left-0 top-16 md:top-0 duration-300 shadow-md md:shadow-none transition-all ${
+        className={`md:flex gap-2 font-medium absolute md:static bg-white w-full md:w-auto left-0 top-16 md:top-0 duration-300 shadow-md md:shadow-none transition-all z-50 ${
           isOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-2 md:opacity-100 md:visible md:translate-y-0"
         }`}
       >
