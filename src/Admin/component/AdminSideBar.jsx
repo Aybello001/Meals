@@ -44,7 +44,7 @@ export default function AdminSidebar() {
       {/* Mobile Toggle Button */}
       <button
         onClick={toggleSidebar}
-        className="lg:hidden fixed top-4 left-4 z-50 bg-orange-500 text-white p-3 rounded-lg shadow-lg hover:bg-orange-600 transition-colors"
+        className="lg:hidden fixed top-4 right-4 z-50 bg-orange-500 text-white p-3 rounded-lg shadow-lg hover:bg-orange-600 transition-colors"
       >
         {isOpen ? <X size={20} /> : <Menu size={20} />}
       </button>
@@ -52,14 +52,14 @@ export default function AdminSidebar() {
       {/* Overlay for Mobile */}
       {isOpen && (
         <div
-          className="lg:hidden fixed inset-0 bg-black/50 z-70"
+          className="lg:hidden fixed inset-0 bg-black/50 z-30"
           onClick={toggleSidebar}
         />
       )}
 
       {/* Sidebar */}
       <aside
-        className={`fixed lg:static top-0 left-0 h-100% bg-gray-900 text-white w-64 z-40 transform transition-transform duration-300 ease-in-out ${
+        className={`fixed lg:static top-0 left-0 h-100% bg-gray-900 text-white w-64 z-40 transform transition-transform duration-300 ease-in-out overflow-y-auto ${
           isOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"
         }`}
       >
