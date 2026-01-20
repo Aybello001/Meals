@@ -5,11 +5,12 @@ import NigerMeals from "./pages/NigerMeals";
 import Meal from "./pages/MealsPage"; // rename so it matches
 import CartPage from "./pages/CartPage";
 import ProfilePage from "./pages/ProfilePage"
+import AdminLayout from "./Admin/AdminLayout";
 
 export default function App() {
   return (
     <Routes>
-      <Route index element={<NigerMeals />} />
+      <Route index element={<AdminLayout />} />
       <Route path="/menu" element={<Menu />} />
       <Route path="/meal/:id" element={<Meal />} />
       <Route path="/cart" element={<CartPage />} />
