@@ -6,6 +6,8 @@ import Meal from "./pages/MealsPage"; // rename so it matches
 import CartPage from "./pages/CartPage";
 import ProfilePage from "./pages/ProfilePage"
 import AdminLayout from "./Admin/AdminLayout";
+import AdminMeals from "./Admin/pages/AdminMeals";
+import AdminOrders from "./Admin/pages/AdminOrders";
 
 export default function App() {
   return (
@@ -15,6 +17,10 @@ export default function App() {
       <Route path="/meal/:id" element={<Meal />} />
       <Route path="/cart" element={<CartPage />} />
       <Route path="/profile" element={<ProfilePage />}/>
+
+      {/*Admin Routes*/}
+      <Route path="/admin/meals" element={<AdminMeals />}/>
+      <Route path="/admin/orders" element={<AdminOrders />}/>
     </Routes>
   );
 }

@@ -25,8 +25,7 @@ export default function AdminSidebar() {
 
   const isActive = (path) => location.pathname === path;
 
-  const menuItems = [
-    { icon: LayoutDashboard, label: "Dashboard", path: "/admin" },
+  const menuItems = [,
     { icon: ShoppingCart, label: "Orders", path: "/admin/orders", badge: 12 },
     { icon: UtensilsCrossed, label: "Meals", path: "/admin/meals" },
     { icon: Package, label: "Inventory", path: "/admin/inventory" },
